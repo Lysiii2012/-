@@ -46,7 +46,7 @@ a:hover{
     position: relative;
 }
 .catalog_menu .nav .nav-link:hover,
-.navbar-menu .collapse a:hover{
+.navbar-menu .catalog_icon a:hover{
     color:white;
     background:#34495e;
 }
