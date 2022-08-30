@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Мята</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="modal fade  " id="entrance" tabindex="-1" aria-labelledby="entranceLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content border-success">
+            <div class="modal-header">
+              <h5 class="modal-title" id="entranceLabel">Вход</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form class="px-4 py-3 ">
+                      <div class="form-group ">
+                        <label for="exampleDropdownFormEmail1 ">Адрес электронной почты</label>
+                        <input type="email" class="form-control btn-outline-success" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Пароль</label>
+                        <input type="password" class="form-control btn-outline-success" id="exampleDropdownFormPassword1" placeholder="Пароль">
+                      </div>
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                          <label class="form-check-label" for="dropdownCheck">
+                            Запомните меня
+                          </label>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Забыли пароль?</a>
+                  </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Войти в систему</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registration" tabindex="-1" aria-labelledby="registrationLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title " id="registrationlLabel">Регистрация</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body  justify-content-center">
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-10">
+                        <label for="inputEmail4">Эл. адрес</label>
+                        <input type="email" class="form-control  btn-outline-success" id="inputEmail4">
+                      </div>
+                      <div class="form-group col-md-10">
+                        <label for="inputPassword4">Пароль</label>
+                        <input type="password " class="form-control  btn-outline-success" id="inputPassword4">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-10">
+                            <label for="inputName">Имя</label>
+                            <input type="text" class="form-control  btn-outline-success" id="inputName">
+                        </div>
+                        <div class="form-group col-md-10">
+                            <label for="inputTell">Номер телефона</label>
+                            <input type="tel" class="form-control  btn-outline-success" id="inputTell">
+                        </div>
+                        <div class="form-group col-md-10">
+                            <label for="inputSity">Город</label>
+                            <input type="text" class="form-control  btn-outline-success" id="inputSity">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Проверить меня
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Зарегестрироваться</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container header px-0 mb-2">
+        <nav class="navbar navbar-expand-lg pr-0  navbar-light bg d-md-flex  bg-transparent  justify-content-between ">
+            <a class="navbar-brand  d-block  col-4 col-lg-4  col-xl-3 order-0   " href="#"><img src="images/logo_dec.png" class="img-fluid" alt="Myata"></a>
+            <div class="navbar-nav col-12 col-lg-5  px-0 order-2  order-md-2 order-xl-1 flex-md-wrap">
+                <div class="nav-item text-center  px-0 pt-3 ">
+                    <a class="nav-link tel d-inline-block pl-5 position-relative" href="#">(096) <span class="font-weight-bolder">923-90-99</span></a>
+                    <a class="nav-link tel d-inline-block pl-5 position-relative" href="#">(063) <span class="font-weight-bolder">616-91-66</span></a>
+                    <form class="form-text find-some position-relative rounded d-inline-block col-10 mt-2">
+                        <input class="form-control  mr-sm-2 my-3 bg" type="search" placeholder="Поиск  по сайту" aria-label="Поиск">
+                    </form>
+                </div>
+            </div>
+            <div class="navbar-col col-lg-3 px-0 pl-sm-3 order-1 col-7 clearfix flex-sm-nowrap flex-md-nowrap order-lg-2  ">
+                <div class="input_form float-right  text-center mb-2">
+                        <button type="button" class="btn btn-outline-success input position-relative pl-4 btn-primary border-0" data-toggle="modal" data-target="#entrance">Вход</button>
+                        <button type="button" class="btn btn-outline-success input_reg position-relative pl-4 btn-primary border-0" data-toggle="modal" data-target="#registration">Регистрация</button>
+                </div>
+                <div class="info_buy position-relative float-right  mx-0 rounded justify-content-end bg">
+                    <div class="product">
+                        <p class="d-inline-block mb-0 color1">Товаров:</p>
+                        <span>25 шт.</span>
+                   </div>
+                    <div class="product sum">
+                        <p class="d-inline-block mb-0 color1">На сумму:</p>
+                        <span>3 750 грн.</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid fluid-menu">
+        <div class="container ">
+            <nav class="navbar navbar-menu navbar-expand-lg navbar-light p-0">
+               <div class="d-lg-none d-xl-none ">
+                <button class="btn btn-success  position-relative bg1 border-success text-uppercase font-weight-bold pl-5 catalog catalog-mob" type="button" data-toggle="collapse" data-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    КАТАЛОГ
+                </button>
+                  <div class="collapse width position-absolute mt-sm-3 mt-md-3 " id="collapseWidthExample">
+                    <div class="card card-body border-0 p-0 " style="width: 263px; z-index: 100;">
+                        <ul class="nav flex-column">
+                            <li class="nav-item  catalog_icon position-relative">
+                              <a class="nav-link active border-bottom border-success color3 mx-3 py-3 " href="#">Формы для выпечки</a>
+                            </li>
+                            <li class="nav-item catalog_icon position-relative">
+                              <a class="nav-link mx-3 py-3 border-bottom border-success color3" href="#">Кондитерский инвентарь</a>
+                            </li>
+                            <li class="nav-item catalog_icon position-relative">
+                              <a class="nav-link mx-3 py-3 border-bottom border-success color3" href="#">Оборудование</a>
+                            </li>
+                            <li class="nav-item catalog_icon position-relative">
+                              <a class="nav-link mx-3 py-3 color3 ">Всё для кухни</a>
+                            </li>
+                            <li class="nav-item  catalog_icon position-relative">
+                                 <button class="btn btn-primary color-item btn-dark position-relative px-4 text-left" type="button" data-toggle="collapse" data-target="#sec_menu" aria-expanded="false" aria-controls="sec_menu">
+                                    Фототорт. 
+                                 Печать на пищевой бумаге
+                                  </button>
+                                  <div class="collapse width position-absolute mt-sm-3 mt-md-3 right " id="sec_menu">
+                                    <div class="card card-body border-0" style="width: 263px;">
+                                        <ul class="nav flex-column bg-success colo">
+                                            <li class="nav-item catalog_icon_sec position-relative">
+                                              <a class="nav-link active color2 border-bottom border-white mx-3" href="#">Индивидуальные картинки</a>
+                                            </li>
+                                            <li class="nav-item catalog_icon_sec position-relative">
+                                              <a class="nav-link color2 border-bottom border-white mx-3" href="#">Картинки с деньгами</a>
+                                            </li>
+                                            <li class="nav-item catalog_icon_sec position-relative">
+                                              <a class="nav-link color2 border-bottom border-white mx-3" href="#">Прочие картинки</a>
+                                            </li>
+                                            <li class="nav-item catalog_icon_sec position-relative">
+                                              <a class="nav-link color2 border-bottom border-white mx-3">Пищевые картинки из 
+                                                разных мультиков</a>
+                                            </li>
+                                            <li class="nav-item catalog_icon_sec position-relative">
+                                                <a class="nav-link color2 border-bottom border-white mx-3">Индивидуальные картинки</a>
+                                            </li>
+                                            <li class="nav-item catalog_icon_sec position-relative">
+                                                <a class="nav-link color2 border-bottom border-white mx-3">Картинки с деньгами</a>
+                                             </li>
+                                             <li class="nav-item catalog_icon_sec position-relative">
+                                                <a class="nav-link color2 mx-3">Прочие картинки</a>
+                                             </li>
+                                          </ul>
+                                    </div>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+               </div> 
+                <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Переключатель навигации">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </nav>
+              <div class="collapse navbar-collapse  nav-menu justify-content-around flex-md-wrap-reverse d-lg-block d-xl-block" id="navbarText">
+                <ul class="navbar-nav nav_header align-items-end pr-md-4 pr-5 flex-lg-row justify-content-lg-between">
+                   <li class="nav-item active">
+                       <a class="nav-link header-nav py-4 position-relative color2 text-uppercase" href="#">Главная <span class="sr-only">(текущая)</span></a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link header-nav py-4  position-relative color2 text-uppercase" href="#">О нас</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link header-nav py-4 position-relative color2 text-uppercase" href="#">Доставка</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link header-nav py-4 position-relative color2 text-uppercase" href="#">Как сделать заказ</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link header-nav py-4 position-relative color2 text-uppercase" href="#">Возврат товара</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link header-nav py-4 position-relative color2 text-uppercase" href="#">Сотрудничество</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link header-nav py-4 position-relative color2 text-uppercase" href="#">Акции</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link header-nav py-4 position-relative color2 text-uppercase" href="#">Новости</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link py-4 position-relative color2 text-uppercase" href="#">Контакты</a>
+                   </li>
+                   </ul>
+           </div> 
+        </div>
+    </div>
+    <div class="container-fluid fluid-carusel  d-none d-lg-block ">
+        <div class="container py-4 px-0 d-flex " >
+            <ul class="nav flex-column  col-3 ">
+                <li class="nav-item bg1 border-success rounded-top text-center">
+                    <a class="nav-link catalog  position-relative active mx-3  py-4 color2 text-uppercase font-weight-bold" href="#">Каталог</a>
+                  </li>
+                <li class="nav-item  catalog_icon position-relative bg">
+                  <a class="nav-link  active mx-3 py-4 pr-0 border-bottom border-success color3" href="#">Формы для выпечки</a>
+                </li>
+                <li class="nav-item catalog_icon position-relative bg">
+                  <a class="nav-link  mx-3 py-4 pr-0  border-bottom border-success color3" href="#">Кондитерский инвентарь</a>
+                </li>
+                <li class="nav-item catalog_icon position-relative bg">
+                  <a class="nav-link  mx-3 py-4 pr-0  border-bottom border-success color3" href="#">Оборудование</a>
+                </li>
+                <li class="nav-item catalog_icon position-relative bg">
+                  <a class="nav-link  mx-3 py-4 pr-0  color3">Всё для кухни</a>
+                </li>
+                <li class="nav-item catalog_icon position-relative ">
+                     <button class="btn btn-primary btn-dark color-item position-relative py-4 px-4 text-left" type="button" data-toggle="collapse" data-target="#sec_menu" aria-expanded="false" aria-controls="sec_menu">
+                        Фототорт. 
+                     Печать на пищевой бумаге
+                      </button>
+                      <div class="collapse width position-absolute mt-sm-3 mt-md-3 right " id="sec_menu"  style="left: 300px; top:-15px">
+                        <div class="card card-body p-0" style="width: 270px; z-index: 20;">
+                            <ul class="nav flex-column bg1">
+                                <li class="nav-item catalog_icon_sec position-relative">
+                                  <a class="nav-link active color2 border-bottom border-white py-4 mx-3" href="#">Индивидуальные картинки</a>
+                                </li>
+                                <li class="nav-item catalog_icon_sec position-relative">
+                                  <a class="nav-link color2 border-bottom border-white py-4 mx-3" href="#">Картинки с деньгами</a>
+                                </li>
+                                <li class="nav-item catalog_icon_sec position-relative">
+                                  <a class="nav-link color2 border-bottom border-white py-4 mx-3" href="#">Прочие картинки</a>
+                                </li>
+                                <li class="nav-item catalog_icon_sec position-relative">
+                                  <a class="nav-link color2 border-bottom border-white py-4 mx-3">Пищевые картинки из 
+                                    разных мультиков</a>
+                                </li>
+                                <li class="nav-item catalog_icon_sec position-relative">
+                                    <a class="nav-link color2 border-bottom border-white py-4 mx-3">Индивидуальные картинки</a>
+                                </li>
+                                <li class="nav-item catalog_icon_sec position-relative">
+                                    <a class="nav-link color2 border-bottom border-white py-4 mx-3">Картинки с деньгами</a>
+                                 </li>
+                                 <li class="nav-item catalog_icon_sec position-relative">
+                                    <a class="nav-link color2 py-4 mx-3">Прочие картинки</a>
+                                 </li>
+                              </ul>
+                        </div>
+                      </div>
+                </li>
+            </ul>
+            <div id="cakeCarusel" class="carousel slide col-9 pr-0" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#cakeCarusel" data-slide-to="0" class="active"></li>
+                  <li data-target="#cakeCarusel" data-slide-to="1"></li>
+                  <li data-target="#cakeCarusel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/list1.jpg" class="d-block w-100" alt="cake">
+                    <div class="carousel-caption  d-none d-md-block text-uppercase text-right pl-5">
+                      <h5 class="font-weight-bolder">Только в этом месяце!</h5>
+                      <p>Скидка на формы для кексов 35%!!!.</p>
+                      <button type="button" class="btn btn-dark">Подробнее</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/list2.png" class="d-block w-100" alt="cake">
+                    <div class="carousel-caption d-none d-md-block text-uppercase text-right pl-5">
+                      <h5 class="font-weight-bolder">Только сегодня!</h5>
+                      <p>Скидка на наполнители для кексов 50%!!!</p>
+                      <button type="button" class="btn btn-dark">Подробнее</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/list1.jpg" class="d-block w-100" alt="cake">
+                    <div class="carousel-caption d-none d-md-block text-uppercase text-right pl-5">
+                      <h5 class="font-weight-bolder">Новинки в этом месяце!</h5>
+                      <p>Простой рецепт потрясающих кексов! Они настолько вкусные, что превзойдут все Ваши ожидания!.</p>
+                      <button type="button" class="btn btn-dark">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg">
+        <div class="container pt-4">
+            <h2 class=" text-uppercase text-center font-weight-bold mt-5 mb-4">Наши преимущества</h2>
+            <div class="row icon_advantage justify-content-between  flex-sm-wrap flex-md-nowrap flex-lg-nowrap flex-xl-nowrap text-center mb-md-5">
+                <p class="mx-4  mx-sm-0 mb-sm-2  position-relative  bg-layers col-sm-6 col-md-3">Мы следим за качеством наших товаров</p>
+                <p class="mx-4  mx-sm-0 mb-sm-2  position-relative  bg-layers2 col-sm-6 col-md-3">У нас большой выбор товаров</p>
+                <p class="mx-4  mx-sm-0 mb-sm-2  position-relative  bg-layers3 col-sm-6 col-md-3">Мы доставим Ваш заказ вовремя</p>
+                <p class="mx-4  mx-sm-0 mb-sm-2  position-relative  bg-layers4 col-sm-6 col-md-3">Мы доставим Ваш заказ вовремя</p>
+            </div>
+        </div>
+    </div>
+    <div class="container px-0 pb-4 ">
+        <div class="catalog_menu d-flex justify-content-center justify-content-sm-between align-items-center">
+            <a class="page-link d-none d-lg-block rounded arrow bg p-3 position-relative"></a>
+            <ul class="nav nav-tabs border-0 justify-content-between  justify-content-sm-center mb-5 mt-5" id="myTab" role="tablist">
+                <li class="nav-item " role="presentation">
+                  <a class="nav-link d-inline-block bg px-md-5  py-3  color3 mx-0 mx-sm-3 text-uppercase font-weight-bold active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Хиты продаж</a>
+                </li>
+                <li class="nav-item " role="presentation">
+                  <a class="nav-link d-inline-block px-md-5 py-3 bg color3 mx-0 mx-sm-3 text-uppercase font-weight-bold " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Акции</a>
+                </li>
+                <li class="nav-item " role="presentation">
+                  <a class="nav-link d-inline-block px-md-5  py-3 bg  color3 mx-0 mx-sm-3 text-uppercase font-weight-bold " id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Новинки</a>
+                </li>
+            </ul>
+            <a class="page-link d-none d-lg-block next rounded bg p-3 position-relative"></a>
+        </div>
+        <div class="tab-content mb-4 " id="myTabContent">
+            
+            <div class="tab-pane fade show active text-center col-12 pt-5" id="home" role="tabpanel" aria-labelledby="home-tab">
+               <div class=" hit d-flex justify-content-center justify-content-lg-between justify-content-md-around flex-wrap ">
+                    <div class="card border-0 my-5 my-lg-0" style="width: 16rem;">
+                        <div class="cart_img cart_hit position-relative">
+                            <img src="images/form.png" class="card-img-top  " alt="корзинка">
+                            <p class="cart_text position-absolute color1 bg m-0 ml-3 pl-4 pb-1 pr-2 rounded-right">В наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Набор силиконовых порционных форм Корзиночка-Квадрат,10 шт.</h5>
+                            <p class="card-text mb-2 color1">55 грн.</p>
+                            <a href="#" class="btn btn-success mb-2 bg1 px-5">В корзину</a>
+                            <a href="#" class="link_icon d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 my-5 my-lg-0" style="width: 16rem;">
+                        <div class="cart_img cart_hit position-relative">
+                            <img src="images/dishes.png" class="card-img-top  " alt="шоколадный фонтан">
+                            <p class="cart_text position-absolute color1 bg m-0 ml-3 pl-4 pb-1 pr-2 rounded-right">В наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Фонтан шоколадный Altezoro KZ-24/3</h5>
+                            <p class="card-text  mb-2 d-inline-block "><del class="text-muted">2300 грн.</del></p>
+                            <p class="card-text color1 mb-2 d-inline-block">1800 грн.</p>
+                            <a href="#" class="btn btn-success mb-2 bg1  px-5">В корзину</a>
+                            <a href="#" class="link_icon  d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 my-5 my-lg-0" style="width: 16rem;">
+                        <div class="cart_img cart_hit position-relative">
+                            <img src="images/plusher.png" class="card-img-top  " alt="плужеры">
+                            <p class="cart_text position-absolute color1 bg m-0 ml-3 pl-4 pb-1 pr-2 rounded-right">В наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Плунжеры для мастики Листики с металлическим толкателем</h5>
+                            <p class="card-text mb-2 color1s">55 грн.</p>
+                            <a href="#" class="btn btn-success mb-2 bg1 px-5">В корзину</a>
+                            <a href="#" class="link_icon  d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 my-5 my-lg-0 d-lg-none d-sm-block d-md-block d-xl-block" style="width: 16rem;">
+                        <div class=" cart_hit product_out position-relative">
+                            <img src="images/carrier.png"  class="card-img-top  " alt="планка-держатель">
+                            <p class="cart_text  position-absolute text-danger bg m-0 ml-3 pl-4 pb-1 pr-2 rounded-right">Нет в наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Магнитная планка-держатель для ножей.</h5>
+                            <p class="card-text  mb-2 d-inline-block "><del>160 грн.</del</p>
+                            <p class="card-text color1 mb-2 d-inline-block">140 грн.</p>
+                            <a href="#" class="btn btn-success mb-2 bg1 px-5">В корзину</a>
+                            <a href="#" class="link_icon  d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+               </div>
+               <div class="all_hit">
+                    <a href="#" class=" d-block text-right color3 font-weight-bolder text-uppercase my-5">Все хиты</a>
+               </div>
+            </div>
+             <div class="tab-pane fade active  text-center col-12 pt-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class=" sale d-flex justify-content-center justify-content-lg-between justify-content-md-around flex-wrap ">
+                    <div class="card border-0 my-5 my-lg-0" style="width: 16rem;">
+                        <div class="cart_img cart_sale position-relative">
+                            <img src="images/plusher.png" class="card-img-top  " alt="плужеры">
+                            <p class="cart_text position-absolute color1 bg m-0 ml-3 pl-4 pb-1 pr-2 rounded-right">В наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Плунжеры для мастики Листики с металлическим толкателем</h5>
+                            <p class="card-text mb-2 color1">55 грн.</p>
+                            <a href="#" class="btn btn-success mb-2 bg1 px-5">В корзину</a>
+                            <a href="#" class="link_icon  d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 my-5 my-lg-0" style="width: 16rem;">
+                        <div class="cart_img cart_sale position-relative">
+                            <img src="images/carrier.png" class="card-img-top  " alt="планка-держатель">
+                            <p class="cart_text position-absolute color1 bg m-0 ml-3 pl-4 pb-1 pr-2 rounded-right">В наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Магнитная планка-держатель для ножей.</h5>
+                            <p class="card-text mb-2 d-inline-block "><del>165 грн.</del</p>
+                            <p class="card-text color1 mb-2 d-inline-block">140 грн.</p>
+                            <a href="#" class="btn btn-success mb-2 bg1 px-5">В корзину</a>
+                            <a href="#" class="link_icon  d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 my-5 my-lg-0" style="width: 16rem;">
+                        <div class="product_out cart_sale position-relative">
+                            <img src="images/form.png" class="card-img-top  " alt="корзинка">
+                            <p class="cart_text position-absolute color1 bg m-0 ml-3 pl-4 pb-1 pr-2 rounded-right">В наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Набор силиконовых порционных форм Корзиночка-Квадрат,10 шт.</h5>
+                            <p class="card-text mb-2 color1">55 грн.</p>
+                            <a href="#" class="btn btn-success mb-2 bg1 px-5">В корзину</a>
+                            <a href="#" class="link_icon d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 my-5 my-lg-0 d-lg-none d-sm-block d-md-block d-xl-block" style="width: 16rem;">
+                        <div class="product_out cart_sale position-relative">
+                            <img src="images/dishes.png" class="card-img-top  " alt="шоколадный фонтан">
+                            <p class="cart_text position-absolute color1 bg m-0 ml-3 pl-4 pb-1 pr-2 rounded-right">В наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Фонтан шоколадный Altezoro KZ-24/3</h5>
+                            <p class="card-text  mb-2 d-inline-block"><del>2300 грн.</del.</p>
+                            <p class="card-text color1 mb-2 d-inline-block">1800 грн.</p>
+                            <a href="#" class="btn btn-success mb-2 bg1 px-5">В корзину</a>
+                            <a href="#" class="link_icon  d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all_hit">
+                    <a href="#" class=" d-block text-right color3 font-weight-bolder text-uppercase my-5">Все акции</a>
+               </div>
+            </div>
+            <div class="tab-pane fade active text-center col-12 pt-5" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class=" sale d-flex justify-content-center justify-content-lg-between justify-content-md-around flex-wrap ">
+                    <div class="card border-0 my-5 my-lg-0" style="width: 16rem;">
+                        <div class="cart_img cart_new position-relative">
+                            <img src="images/dishes.png" class="card-img-top  " alt="шоколадный фонтан">
+                            <p class="cart_text position-absolute color1 bg m-0 ml-3 pl-4 pb-1 pr-2 rounded-right">В наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Фонтан шоколадный Altezoro KZ-24/3</h5>
+                            <p class="card-text mb-2 d-inline-block "><del>2300 грн.</del</p>
+                            <p class="card-text color1 mb-2 d-inline-block">1800 грн.</p>
+                            <a href="#" class="btn btn-success mb-2 bg1 px-5">В корзину</a>
+                            <a href="#" class="link_icon  d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 my-5 my-lg-0" style="width: 16rem;">
+                        <div class="cart_img cart_new position-relative">
+                            <img src="images/form.png" class="card-img-top  " alt="корзинка">
+                            <p class="cart_text position-absolute color1 bg m-0 ml-3 pl-4 pb-1 pr-2 rounded-right">В наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Набор силиконовых порционных форм Корзиночка-Квадрат,10 шт.</h5>
+                            <p class="card-text color1 mb-2">55 грн.</p>
+                            <a href="#" class="btn btn-success mb-2 bg1 px-5">В корзину</a>
+                            <a href="#" class="link_icon  d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 my-5 my-lg-0" style="width: 16rem;">
+                        <div class="cart_img cart_new position-relative">
+                            <img src="images/plusher.png" class="card-img-top  " alt="плужеры">
+                            <p class="cart_text position-absolute color1 bg m-0 ml-3 pl-4 pb-1 pr-2">В наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Плунжеры для мастики Листики с металлическим толкателем</h5>
+                            <p class="card-text color1 mb-2">55 грн.</p>
+                            <a href="#" class="btn btn-primary mb-2 bg1 px-5">В корзину</a>
+                            <a href="#" class="link_icon d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 my-5 my-lg-0 d-lg-none d-sm-block d-md-block d-xl-block" style="width: 16rem;">
+                        <div class="cart_img cart_new position-relative">
+                            <img src="images/carrier.png" class="card-img-top" alt="планка-держатель">
+                            <p class="cart_text position-absolute color1 bg m-0 ml-3 pl-4 pb-1 pr-2 rounded-right">В наличии</p>
+                        </div>
+                        <div class="card-body pb-0 text-center px-0">
+                            <h5 class="card-title">Магнитная планка-держатель для ножей.</h5>
+                            <p class="card-text mb-2 d-inline-block"><del>170 грн.</del</p>
+                            <p class="card-text color1 mb-2  d-inline-block">140 грн.</p>
+                            <a href="#" class="btn btn-success mb-2 bg1 px-5">В корзину</a>
+                            <a href="#" class="link_icon  d-block mb-3">Купить в один клик</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="all_hit">
+                    <a href="#" class=" d-block text-right color3 font-weight-bolder text-uppercase my-5">Все новинки</a>
+               </div>
+            </div>
+         </div>
+    </div>
+    <div class="container-fluid aboute-use mx-sm-0 mx-md-0">
+        <div class="container ">
+            <h3 class="text-center text-uppercase pb-5 font-weight-bold">Коротко о нас</h3>
+            <div class="col-12 clearfix ">
+                <img class=" float-left mr-4 mb-3" src="images/icon_about.png" alt="кисти">
+                <p class="color2 mb-2">Кондитерский интернет-магазин (Киев, Львов, Харьков) – место, где можно приобрести все для украшения тортов и десертов. Давно ищете где купить готовую мастику, качественные пищевые красители или упаковку для тортов и кексов? У нас можно купить всё, что необходимо для украшения кондитерских изделий.</p>
+                <p class="color2 mb-2">В нынешнее время спрос на мастичные торты просто огромен. И чтобы кондитерам популяризировать свои шедевры, необходимо постоянно придумывать новые варианты оформления, удивляя своих клиентов.</p>
+                <p class="color2 mb-2">Поэтому в продаже постоянно появляются новые силиконовые молды, плунжеры и вырубки для мастики, фигурные скалки и многое другое.</p>
+                <p class="color2 mb-2">Для вашего удобства мы постарались расширить ассортимент интернет-магазина и выйти за рамки лишь кондитерского дела. Поэтому у нас можно приобрести формы для выпечки, кухонные принадлежности, удобные гаджеты для готовки.</p>
+                <p class="color2 mb-2">Также в ответ на ваши просьбы появилась новостная страничка, где будут публиковаться полезные статьи и обзоры кондитерских инструментов нашего интернет-магазина.</p>
+                <p class="color2 pb-5">Купить ингредиенты и инструмент в кондитерском интернет-магазине (Житомир,Чернигов,Винница) можно в пару кликов либо в телефонном режиме.</p></div>
+        </div>
+    </div>
+    <div class="container pb-5">
+        <h3 class="text-center text-uppercase font-weight-bold color3  pb-5">Новости</h3>
+        <div class="card-icond d-flex justify-content-lg-between justify-content-md-around justify-content-center  flex-wrap ">
+            <div class="card border-0  my-5 my-lg-0" style="width: 16rem;">
+                <img src="images/form_for.png" class="card-img-top" alt="формы для кексов">
+                <div class="card-body px-0 pb-0">
+                  <h5 class="card-title font-weight-bold">Как выбрать силиконовую форму</h5>
+                  <p class="date color1 pl-4 position-relative">28.09.2015</p>
+                  <p class="card-text">Силиконовые формы привлекают нас удобством, яркими цветами и огромным ассортиментом фигурок..</p>
+                </div>
+                <div class="card-body border-0 pt-0 px-0 text-right">
+                  <a href="#" class="card-link pz-0" >Читать далее</a>
+                </div>
+            </div>
+            <div class="card border-0 my-5 my-lg-0" style="width: 16rem;">
+                <img src="images/cake.png" class="card-img-top" alt="формы для кексов">
+                <div class="card-body px-0 pb-0">
+                  <h5 class="card-title font-weight-bold">Мехенди-Торт. Украшения кремом под роспись хной</h5>
+                  <p class="date color1 pl-4 position-relative">15.09.2015</p>
+                  <p class="card-text">Традиционное искусство придает определенную символику и экзотическую красоту в любой свадебный торт.</p>
+                </div>
+                <div class="card-body border-0 pt-0 px-0 text-right">
+                  <a href="#" class="card-link pz-0" >Читать далее</a>
+                </div>
+            </div>
+            <div class="card border-0 my-5 my-lg-0" style="width: 16rem;">
+                <img src="images/easter.png" class="card-img-top" alt="формы для кексов">
+                <div class="card-body px-0 pb-0">
+                  <h5 class="card-title font-weight-bold">Классический рецепт творожной пасхи</h5>
+                  <p class="date color1 pl-4 position-relative">08.07.2015</p>
+                  <p class="card-text">Все мы привыкли к тому, что на Пасху пекутся куличи, это стало своего рода национальной традицией.</p>
+                </div>
+                <div class="card-body border-0 pt-0 px-0 text-right">
+                  <a href="#" class="card-link pz-0" >Читать далее</a>
+                </div>
+            </div>
+            <div class="card border-0 my-5 my-lg-0 d-lg-none d-sm-block d-md-block d-xl-block" style="width: 16rem;">
+                <img src="images/mat.png" class="card-img-top" alt="коврик для мастики">
+                <div class="card-body px-0 pb-0">
+                  <h5 class="card-title font-weight-bold">Коврики для мастики. Как пользоваться</h5>
+                  <p class="date color1 pl-4 position-relative">30.05.2015</p>
+                  <p class="card-text mb-4">Силиконовые накладки-коврики для мастики представляют собой новейшую разработку в декорировании тортов..</p>
+                </div>
+                <div class="card-body border-0 pt-0 px-0 text-right">
+                  <a href="#" class="card-link" >Читать далее</a>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="container-fluid footer-content px-md-0 mt-2">
+        <div class="container d-flex  flex-wrap  pt-4 px-0 align-items-lg-center">
+                <ul class="nav nav-footer col-4 col-md-12 col-lg-7 s justify-content-md-center  order-lg-0">
+                    <li class="nav-item footer-nav position-relative">
+                      <a class="nav-link text-white" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item footer-nav position-relative">
+                      <a class="nav-link color2" href="#">Доставка</a>
+                    </li>
+                    <li class="nav-item footer-nav position-relative">
+                      <a class="nav-link color2" href="#">Карта сайта</a>
+                    </li>
+                    <li class="nav-item footer-nav position-relative">
+                      <a class="nav-link  color2">Производители</a>
+                    </li>
+                    <li class="nav-item footer-nav position-relative">
+                        <a class="nav-link  color2">Акции</a>
+                      </li>
+                  </ul>
+            <ul class="footer-social col-2 flex-column col-md-11 flex-md-row col-lg-3 py-md-4 px-lg-0 d-flex  justify-content-between justify-content-lg-around order-1 order-lg-2">
+                <li><a class="vk position d-block position-relative" href="#"><svg>
+                   <g>
+                   <text kerning="auto" font-family="MS Sans Serif" fill="rgb(0, 0, 0)" font-size="24px" x="0px" y="16.6979999999999px"><tspan font-size="24px" font-family="MS Sans Serif" font-weight="bold" fill="#F9F9F9">B</tspan></text>
+                   </g>
+                   </svg></a></li>
+                <li><a class="facebook d-block  position-relative" href="#"><svg>
+                   <defs>
+                   <filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="10px" height="23px"  >
+                       <feOffset in="SourceAlpha" dx="0" dy="1" />
+                       <feGaussianBlur result="blurOut" stdDeviation="0" />
+                       <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+                       <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                       <feComponentTransfer><feFuncA type="linear" slope="0.2"/></feComponentTransfer>
+                       <feMerge>
+                       <feMergeNode/>
+                       <feMergeNode in="SourceGraphic"/>
+                     </feMerge>
+                   </filter>
+                   </defs>
+                   <g>
+                   <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                    d="M10.2,6.998 L6.970,6.998 L6.970,5.340 C6.970,4.482 7.776,3.970 8.167,3.970 C8.558,3.970 9.947,3.970 9.947,3.970 L9.947,0.13 L6.635,0.0 C2.959,0.0 1.998,2.811 1.998,4.610 L1.998,6.998 L0.2,6.998 L0.2,11.7 L1.998,11.7 C1.998,15.992 1.998,21.998 1.998,21.998 L6.970,21.998 C6.970,21.998 6.970,15.933 6.970,11.7 L9.445,11.7 L10.2,6.998 Z"/>
+                   </g>
+                   </svg></a></li>
+                <li><a class="tweeter d-block  position-relative" href="#"><svg >
+                   <g>
+                   <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                    d="M14.963,0.0 C16.712,0.30 17.642,0.611 18.531,1.427 C19.285,1.362 20.266,0.937 20.843,0.642 C21.30,0.538 21.218,0.435 21.405,0.332 C21.75,1.231 20.628,1.934 19.940,2.468 C19.788,2.586 19.636,2.746 19.445,2.822 C19.445,2.826 19.445,2.829 19.445,2.833 C20.424,2.823 21.232,2.378 21.999,2.136 C21.999,2.139 21.999,2.143 21.999,2.147 C21.596,2.793 21.51,3.448 20.469,3.917 C20.234,4.105 19.999,4.294 19.764,4.482 C19.777,5.527 19.749,6.524 19.555,7.403 C18.428,12.510 15.441,15.977 10.713,17.462 C9.15,17.996 6.272,18.215 4.327,17.728 C3.362,17.486 2.491,17.214 1.673,16.854 C1.219,16.653 0.798,16.437 0.396,16.190 C0.264,16.109 0.132,16.27 0.0,15.946 C0.438,15.960 0.951,16.82 1.442,16.2 C1.886,15.929 2.321,15.948 2.730,15.858 C3.751,15.632 4.658,15.333 5.439,14.873 C5.817,14.650 6.392,14.387 6.661,14.65 C6.154,14.74 5.694,13.956 5.318,13.822 C3.858,13.302 3.8,12.347 2.455,10.911 C2.897,10.960 4.172,11.76 4.470,10.823 C3.913,10.792 3.377,10.467 2.994,10.225 C1.820,9.484 0.862,8.242 0.869,6.329 C1.23,6.404 1.178,6.477 1.332,6.551 C1.627,6.676 1.927,6.744 2.279,6.817 C2.427,6.847 2.725,6.936 2.895,6.872 C2.888,6.872 2.881,6.872 2.873,6.872 C2.646,6.605 2.276,6.428 2.47,6.142 C1.294,5.197 0.588,3.744 1.34,2.14 C1.148,1.575 1.327,1.188 1.519,0.830 C1.526,0.833 1.534,0.837 1.541,0.841 C1.629,1.26 1.824,1.162 1.948,1.317 C2.333,1.798 2.808,2.230 3.292,2.611 C4.940,3.911 6.424,4.709 8.808,5.300 C9.413,5.451 10.112,5.565 10.834,5.566 C10.631,4.971 10.696,4.7 10.856,3.430 C11.258,1.981 12.130,0.936 13.411,0.376 C13.717,0.242 14.56,0.145 14.413,0.66 C14.596,0.44 14.780,0.22 14.963,0.0 Z"/>
+                   </g>
+                   </svg></a></li>
+                <li><a class="google  d-block position-relative" href="#"><svg>
+                   <image  x="8px" y="7px" width="22px" height="21px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAQAAADoKdYeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmCB4QLhSBhEdzAAACDElEQVQoz4WST0hUURTGf+81Ourkn0qokWRgkP5BIS104U4hiKASk1pUtAhyVxHRziCIcpeLwrKNQSthIFpEYIsIggokIwu1bKakGTOHwck3b5p572sxb0aZhvru4p5zz8c5537nGMLDLs7STlPR5TPHKYcQMnVLjhzXlgc7Ot4nyk/hGpLyvy717u58NyJJjjXQTaAyOejmpNg4fkyCiQlJyl37mypMWOkwfFC9rKxcxT8+BLDaS32OcbNomrAIQKMXrpsByFpFgnvs95F15NFXThpqO+gB2NEGaOrRmgSuuU4NzOeDkuSmdVF9zrz0/i718iussMJOxp4vWDILv9zy+HImVpRt+h4tQjdUjnM+AC0b93lyPjw04g/Cz6f6Dm8+bI0AtB52rPiEgIXoOmG6alOTkuQm1S1oJESIkLO6OluwCBSI9bqg18qUCmbVW0zhrGZmirYP2EuENmfly3h0rtq/72DTfqr1wAiRBJBcrakRcOckK3ayh+1spjm4Z3ZMkjKnCtmuHr1yoDTu/IAkTV6nynswNrXaCWlp0PNr8JfGndoJ0BpQzqukZLyqHha/eb6tbKmNFyckybXVL0MIBXRHshbObKuwdTRMj3oaRPVML5WS7MRwP2bFFaVl+PTXiBV1c5Kbtz69vX2oi7pKK2oIMAI0s7GhprNhKv3DIsmSHP6LDRj/Cv8BUUuTi4SAHkQAAAAASUVORK5CYII=" />
+                   </svg></a></li>
+                <li><a class="instagram  d-block position-relative" href="#"><svg>
+                   <image  x="9px" y="9px" width="16px" height="17px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAQAAAB+puRPAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmCB4QLjZU5AaXAAAA00lEQVQoz4WQsUrDUBSGv1tCcGgnu4mufYC4dbTYoo8hgr6Dozj3KQSfQUImh6pIH6JDKAQTSZbkhr9DSDEkTf/hDud+/IfzoUB98Y1Eb5zusbkE0DccajAACAYcyYEV7HsbDdHq7ub+NvpsopLw8IpYer7CxX2ZScUvHp4koeqlzKSPMyG+LiSbiupvD2wDqXzVqcb2TQrfW8Dy2ia1vjx5mrYATh4XoW8zm4b+wxy3BipRBsC4nDMC/tgor4/9B3TbcJpa2hnE6z7RyY9hwrCHSHcl3awu2wGLvgAAAABJRU5ErkJggg==" />
+                   </svg></a></li>
+            </ul>
+            <ul class="footer-connection d-flex justify-content-center px-lg-0 flex-column flex-md-row flex-lg-row flex-lg-column col-6 col-md-12 col-lg-2 order-lg-1 ">
+                <li><a class="tell-footer mr-sm-4 mr-lg-0 position-relative pl-4 color2 mb-2" href="#">(096) 923-90-99 </a></li>
+                <li><a class="tell-footer mr-sm-4 mr-lg-0 position-relative pl-4 color2 mb-2" href="#"> (063) 616-91-66</a></li>
+                <li><a class="emeil mr-sm-4 mr-lg-0 position-relative pl-4  color2 mb-2" href="#">info@myata.in.ua </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid footer_site ">
+        <a class="color1 d-block text-center p-3" href="#">Интернет-магазин “Мята” © 2015 г</a>
+    </div>
+</body>
+</html>
